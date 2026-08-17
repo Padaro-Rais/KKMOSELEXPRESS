@@ -32,38 +32,38 @@ export class DataService {
 
   pageMeta: Record<string, PageMeta> = {
     home: {
-      title: 'KKMOSEL LOGISTICS - Transport & Logistique Internationale',
-      description: 'KKMOSEL LOGISTICS assure le transport rapide, securise et fiable entre le Luxembourg, l\'Allemagne, la France et la Belgique. Plus de 10 ans d\'experience.',
+      title: 'KKMOSEL EXPRESS - Transport & Logistique Internationale',
+      description: 'KKMOSEL EXPRESS assure le transport rapide, securise et fiable entre le Luxembourg, l\'Allemagne, la France et la Belgique. Plus de 10 ans d\'experience.',
       keywords: 'transport, logistique, Luxembourg, Allemagne, France, Belgique, livraison, camion, entreposage',
     },
     about: {
-      title: 'A propos - KKMOSEL LOGISTICS',
-      description: 'Decouvrez l\'histoire, la mission et les valeurs de KKMOSEL LOGISTICS, leader du transport et de la logistique en Europe.',
+      title: 'A propos - KKMOSEL EXPRESS',
+      description: 'Decouvrez l\'histoire, la mission et les valeurs de KKMOSEL EXPRESS, leader du transport et de la logistique en Europe.',
       keywords: 'a propos, entreprise, transport, logistique, equipe, histoire, mission',
     },
     services: {
-      title: 'Nos Services - KKMOSEL LOGISTICS',
+      title: 'Nos Services - KKMOSEL EXPRESS',
       description: 'Transport routier, logistique, entreposage, distribution et livraison express. Des solutions completes pour vos besoins de transport.',
       keywords: 'services, transport routier, logistique, entreposage, distribution, livraison express',
     },
     destinations: {
-      title: 'Nos Destinations - KKMOSEL LOGISTICS',
+      title: 'Nos Destinations - KKMOSEL EXPRESS',
       description: 'Nous desservons le Luxembourg, l\'Allemagne, la France et la Belgique avec des services de transport sur mesure.',
       keywords: 'destinations, Luxembourg, Allemagne, France, Belgique, transport international',
     },
     gallery: {
-      title: 'Galerie - KKMOSEL LOGISTICS',
+      title: 'Galerie - KKMOSEL EXPRESS',
       description: 'Decouvrez nos flottes de camions, entrepots et operations logistiques en images.',
       keywords: 'galerie, photos, camions, entrepots, logistique, flotte',
     },
     faq: {
-      title: 'FAQ - KKMOSEL LOGISTICS',
+      title: 'FAQ - KKMOSEL EXPRESS',
       description: 'Trouvez les reponses a vos questions sur nos services de transport et logistique.',
       keywords: 'FAQ, questions, reponses, transport, logistique, livraison',
     },
     contact: {
-      title: 'Contact - KKMOSEL LOGISTICS',
-      description: 'Contactez KKMOSEL LOGISTICS pour un devis ou pour en savoir plus sur nos services de transport et logistique.',
+      title: 'Contact - KKMOSEL EXPRESS',
+      description: 'Contactez KKMOSEL EXPRESS pour un devis ou pour en savoir plus sur nos services de transport et logistique.',
       keywords: 'contact, devis, transport, logistique, Luxembourg, telephone, email',
     },
   };
@@ -242,7 +242,7 @@ export class DataService {
       name: 'Jean-Pierre Muller',
       role: 'Directeur des Operations',
       company: 'SteelTech Luxembourg',
-      text: 'KKMOSEL LOGISTICS a transforme notre chaine logistique. Leurs livraisons sont toujours ponctuelles et leurs equipes professionnelles. Un partenaire de confiance depuis 5 ans.',
+      text: 'KKMOSEL EXPRESS a transforme notre chaine logistique. Leurs livraisons sont toujours ponctuelles et leurs equipes professionnelles. Un partenaire de confiance depuis 5 ans.',
       rating: 5,
       avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
     },
@@ -394,7 +394,7 @@ export class DataService {
     {
       year: '2014',
       title: 'Fondation de KKMOSEL',
-      description: 'Marc Koob fonde KKMOSEL LOGISTICS avec une flotte de 3 camions au Luxembourg.',
+      description: 'Marc Koob fonde KKMOSEL EXPRESS avec une flotte de 3 camions au Luxembourg.',
     },
     {
       year: '2016',

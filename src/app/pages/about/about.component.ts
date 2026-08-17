@@ -14,7 +14,7 @@ import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.dir
       <div class="banner-overlay"></div>
       <div class="container">
         <h1>A propos de nous</h1>
-        <p>Découvrez K&KMOSEL LOGISTICS et notre engagement dans le transport international</p>
+        <p>Découvrez K&KMOSEL EXPRESS et notre engagement dans le transport international</p>
       </div>
     </section>
 
@@ -26,7 +26,7 @@ import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.dir
           <h2>Une entreprise de transport au service de l’Europe</h2>
 
           <p>
-            K&KMOSEL LOGISTICS Sàrl-S est spécialisée dans le transport et la logistique internationale.
+            K&KMOSEL EXPRESS Sàrl-S est spécialisée dans le transport et la logistique internationale.
             Nous proposons des solutions fiables, rapides et adaptées aux besoins de nos clients.
           </p>
 
