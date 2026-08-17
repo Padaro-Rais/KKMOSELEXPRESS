@@ -1,0 +1,154 @@
+<app-hero></app-hero>
+
+<section class="why-choose section-padding">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 appScrollReveal>
+                Pourquoi choisir <span>KKMOSEL LOGISTICS</span>
+            </h2>
+            <p appScrollReveal>
+                Votre partenaire de confiance pour le transport international
+            </p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card" *ngFor="let item of whyChooseUs; let i = index; trackBy: trackByIndex" appScrollReveal
+                [style.transitionDelay]="i * 100 + 'ms'">
+
+                <div class="why-icon">
+                    <i [class]="item.icon"></i>
+                </div>
+
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="destinations-preview section-padding">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 appScrollReveal>Nos <span>Destinations</span></h2>
+            <p appScrollReveal>Un réseau étendu couvrant 4 pays européens</p>
+        </div>
+
+        <div class="destinations-grid">
+
+            <div class="destination-card" *ngFor="let dest of destinations; let i = index; trackBy: trackByIndex"
+                appScrollReveal [style.transitionDelay]="i * 100 + 'ms'">
+
+                <div class="destination-flag">{{ dest.flag }}</div>
+
+                <div class="destination-image">
+                    <img [src]="dest.image" [alt]="dest.country" loading="lazy">
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>{{ dest.country }}</h3>
+                    <p>{{ dest.description }}</p>
+
+                    <div class="destination-time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Delai moyen: {{ dest.averageTime }}</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-preview section-padding">
+
+    <div class="container">
+
+        <div class="section-header premium" appScrollReveal>
+
+            <span class="section-badge">Nos expertises</span>
+
+            <h2>
+                Des solutions de <span>transport intelligentes</span>
+            </h2>
+
+            <p>
+                Nous assurons le transport entre le Luxembourg, l’Allemagne,
+                la France et la Belgique avec rapidité et sécurité.
+            </p>
+
+        </div>
+
+        <!-- BLOCK IMAGE + CONTENT -->
+        <div class="services-showcase">
+
+            <!-- IMAGE SIDE -->
+            <div class="showcase-image" appScrollReveal>
+                <img src="https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg"
+                    alt="Transport logistique" />
+
+                <div class="image-overlay"></div>
+
+                <div class="image-badge">
+                    🚚 Transport international
+                </div>
+            </div>
+
+            <!-- CONTENT SIDE -->
+            <div class="showcase-content" appScrollReveal>
+
+                <app-services-card [services]="homeServices"></app-services-card>
+
+                <div class="services-cta">
+
+                    <div class="cta-box">
+
+                        <h3 class="wi">Besoin d’une solution sur mesure ?</h3>
+                        <p class="wi">Nos experts vous accompagnent dans tous vos projets logistiques.</p>
+
+                        <a routerLink="/services" class="btn-primary">
+                            Voir tous nos services →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <app-counter [items]="counterItems"></app-counter> -->
+
+<!-- <section class="testimonials section-padding">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 appScrollReveal>
+                Ce que disent nos <span>clients</span>
+            </h2>
+            <p appScrollReveal>
+                La satisfaction de nos clients est notre priorité
+            </p>
+        </div>
+
+        <app-testimonial [testimonials]="testimonials"></app-testimonial>
+
+    </div>
+</section> -->
+
+<app-cta></app-cta>

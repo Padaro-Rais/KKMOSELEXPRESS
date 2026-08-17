@@ -1,0 +1,174 @@
+.footer {
+  background: #0B1220;
+
+  color: #AAB4C0;
+
+  padding: 70px 0 20px;
+
+  position: relative;
+}
+
+/* GRID */
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+
+  gap: 40px;
+
+  margin-bottom: 40px;
+}
+
+/* BRAND */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+
+  background: linear-gradient(135deg, #0B3D91, #1e5eff);
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  font-weight: 800;
+}
+
+.logo-name {
+  font-size: 18px;
+  font-weight: 800;
+
+  color: white;
+}
+
+.logo-sub {
+  font-size: 11px;
+  color: #F58220;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+
+  color: #8C98A8;
+}
+
+/* SOCIAL */
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: #AAB4C0;
+
+  transition: 0.3s;
+
+  &:hover {
+    background: #F58220;
+    color: white;
+    transform: translateY(-3px);
+  }
+}
+
+/* SECTION */
+.footer-section h4 {
+  color: white;
+
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* LINKS */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #8C98A8;
+  font-size: 13px;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: #F58220;
+  }
+}
+
+/* CONTACT */
+.contact-list li {
+  display: flex;
+  gap: 8px;
+
+  font-size: 13px;
+
+  margin-bottom: 10px;
+
+  color: #8C98A8;
+}
+
+.contact-list i {
+  color: #F58220;
+  min-width: 16px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  padding-top: 20px;
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+
+  color: #6F7B8A;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

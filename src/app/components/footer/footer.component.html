@@ -1,0 +1,112 @@
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- BRAND -->
+      <div class="footer-brand">
+
+        <a class="logo" routerLink="/">
+          <span class="logo-icon">K</span>
+          <div class="logo-text">
+            <span class="logo-name">K&KMOSEL</span>
+            <span class="logo-sub">EXPRESS</span>
+          </div>
+        </a>
+
+        <p class="footer-desc">
+          Votre partenaire de confiance pour le transport international
+          entre le Luxembourg, l’Allemagne, la France et la Belgique.
+        </p>
+
+        <div class="social-links">
+
+          <a
+            *ngFor="let social of dataService.socialLinks"
+            [href]="social.url"
+            class="social-link"
+            [attr.aria-label]="social.name"
+          >
+            <i [class]="social.icon"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- LINKS -->
+      <div class="footer-section">
+
+        <h4>Navigation</h4>
+
+        <ul>
+          <li><a routerLink="/">Accueil</a></li>
+          <li><a routerLink="/about">À propos</a></li>
+          <li><a routerLink="/services">Services</a></li>
+          <li><a routerLink="/destinations">Destinations</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <!-- SERVICES -->
+      <div class="footer-section">
+
+        <h4>Services</h4>
+
+        <ul>
+          <li><a routerLink="/services">Transport routier</a></li>
+          <li><a routerLink="/services">Transport express</a></li>
+          <li><a routerLink="/services">Logistique</a></li>
+          <li><a routerLink="/services">Stockage</a></li>
+          <li><a routerLink="/services">Distribution</a></li>
+        </ul>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-section">
+
+        <h4>Contact</h4>
+
+        <ul class="contact-list">
+
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            {{ dataService.contactInfo.phone }}
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            {{ dataService.contactInfo.email }}
+          </li>
+
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            {{ dataService.contactInfo.address }}
+          </li>
+
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            {{ dataService.contactInfo.hours }}
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+      <p>
+        © {{ currentYear }} KKMOSEL LOGISTICS — Tous droits réservés
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>

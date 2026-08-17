@@ -1,0 +1,101 @@
+<section class="contact-page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="container" appScrollReveal>
+      <h1>Contactez-nous</h1>
+      <p>Une équipe disponible 24h/24 pour vos besoins logistiques</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container content">
+
+    <div class="grid">
+
+      <!-- FORM -->
+      <div class="card form-card" appScrollReveal>
+        <h2>Envoyer un message</h2>
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+          <div class="row">
+            <input formControlName="name" placeholder="Nom complet" />
+            <input formControlName="email" placeholder="Email" />
+          </div>
+
+          <div class="row">
+            <input formControlName="phone" placeholder="Téléphone" />
+            <input formControlName="company" placeholder="Entreprise" />
+          </div>
+
+          <input formControlName="subject" placeholder="Sujet" />
+
+          <textarea formControlName="message" placeholder="Votre message"></textarea>
+
+          <button type="submit" [disabled]="submitted || contactForm.invalid">
+            <span *ngIf="!submitted">Envoyer</span>
+            <span *ngIf="submitted">Envoi...</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="info">
+
+        <div class="card" appScrollReveal>
+          <h3>Contact rapide</h3>
+
+          <div class="item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span>Téléphone</span>
+              <p>{{ dataService.contactInfo.phone }}</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span>Email</span>
+              <p>{{ dataService.contactInfo.email }}</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span>Adresse</span>
+              <p>{{ dataService.contactInfo.address }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card map" appScrollReveal>
+          <div class="map-box">
+            <i class="fa-solid fa-map"></i>
+            <p>Localisation</p>
+          </div>
+        </div>
+
+        <div class="card social" appScrollReveal>
+          <h3>Suivez-nous</h3>
+
+          <div class="social-links">
+            <a *ngFor="let s of dataService.socialLinks" [href]="s.url">
+              <i [class]="s.icon"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

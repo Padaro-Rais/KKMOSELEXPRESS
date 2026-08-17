@@ -1,0 +1,46 @@
+<div class="services-grid">
+
+  <div
+    class="service-card"
+    *ngFor="let service of services; let i = index"
+    appScrollReveal
+    [style.transitionDelay]="i * 100 + 'ms'"
+  >
+
+    <!-- ICON -->
+    <div class="service-icon">
+      <i [class]="service.icon"></i>
+    </div>
+
+    <!-- TITLE -->
+    <h3 class="service-title">
+      {{ service.title }}
+    </h3>
+
+    <!-- DESCRIPTION -->
+    <p class="service-desc">
+      {{ service.description }}
+    </p>
+
+    <!-- FEATURES -->
+    <div class="service-features" *ngIf="service.features?.length">
+
+      <span *ngFor="let feature of service.features">
+        {{ feature }}
+      </span>
+
+    </div>
+
+    <!-- LINK -->
+    <a
+      *ngIf="showLink"
+      routerLink="/services"
+      class="service-link"
+    >
+      En savoir plus
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+  </div>
+
+</div>

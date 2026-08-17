@@ -1,0 +1,154 @@
+.counter-section {
+  position: relative;
+
+  padding: 80px 0;
+
+  background: linear-gradient(135deg, #0B3D91, #1e5eff);
+
+  color: white;
+  overflow: hidden;
+}
+
+/* OVERLAY STYLE TECH */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(245,130,32,0.15), transparent 40%);
+}
+
+/* HEADER */
+.counter-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.badge {
+  display: inline-block;
+
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+
+  padding: 6px 14px;
+  border-radius: 30px;
+
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.counter-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+
+  span {
+    color: #F58220;
+  }
+}
+
+.counter-header p {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* GRID */
+.counter-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+/* CARD */
+.counter-item {
+  text-align: center;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.12);
+  }
+}
+
+/* ICON */
+.icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.15);
+
+  border-radius: 14px;
+
+  font-size: 20px;
+}
+
+/* VALUE */
+.value {
+  font-size: 34px;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.value small {
+  font-size: 16px;
+  color: #F58220;
+  font-weight: 700;
+}
+
+/* LABEL */
+.label {
+  margin-top: 8px;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  opacity: 0.75;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 
+
+@media (max-width: 600px) {
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-header h2 {
+    font-size: 26px;
+  }
+}
+
+.wi{
+   color: white;
+    }

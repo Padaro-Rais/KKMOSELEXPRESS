@@ -1,0 +1,10 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SERVICES": "Services",
+    "GALLERY": "Gallery",
+    "CONTACT": "Contact",
+    "QUOTE": "Request a Quote"
+  }
+}

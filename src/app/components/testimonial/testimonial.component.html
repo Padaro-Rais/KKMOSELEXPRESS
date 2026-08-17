@@ -1,0 +1,44 @@
+<div class="testimonial-grid">
+
+  <div
+    class="testimonial-card"
+    *ngFor="let item of testimonials; let i = index"
+    appScrollReveal
+    [style.transitionDelay]="i * 120 + 'ms'"
+  >
+
+    <!-- QUOTE ICON -->
+    <div class="quote">❝</div>
+
+    <!-- STARS -->
+    <div class="testimonial-stars">
+      <i class="fa-solid fa-star" *ngFor="let s of [].constructor(item.rating)"></i>
+    </div>
+
+    <!-- TEXT -->
+    <p class="testimonial-text">
+      {{ item.text }}
+    </p>
+
+    <!-- AUTHOR -->
+    <div class="testimonial-author">
+
+      <img
+        [src]="item.avatar"
+        [alt]="item.name"
+        class="author-avatar"
+        loading="lazy"
+      />
+
+      <div class="author-info">
+        <span class="author-name">{{ item.name }}</span>
+        <span class="author-role">
+          {{ item.role }} • {{ item.company }}
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

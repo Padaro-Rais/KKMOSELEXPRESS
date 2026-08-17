@@ -1,0 +1,47 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+
+  <div class="navbar-container">
+
+    <!-- LOGO -->
+    <a class="logo" routerLink="/" (click)="closeMenu()">
+      <span class="logo-icon">🚚</span>
+      <div class="logo-text">
+        <span class="logo-title">K&KMOSEL</span>
+        <span class="logo-sub">EXPRESS</span>
+      </div>
+    </a>
+
+    <!-- MENU -->
+    <div class="nav-links" [class.active]="menuOpen">
+
+      <a
+        *ngFor="let link of navLinks"
+        [routerLink]="link.route"
+        routerLinkActive="active"
+        (click)="closeMenu()"
+        class="nav-link"
+      >
+        {{ link.label }}
+      </a>
+
+      <a class="btn-mobile" routerLink="/contact" (click)="closeMenu()">
+        Demander un devis
+      </a>
+
+    </div>
+
+    <!-- CTA -->
+    <a class="btn-cta" routerLink="/contact">
+      Devis
+    </a>
+
+    <!-- BURGER -->
+    <button class="burger" (click)="toggleMenu()">
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+    </button>
+
+  </div>
+
+</nav>

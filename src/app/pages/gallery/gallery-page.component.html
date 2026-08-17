@@ -1,0 +1,31 @@
+<!-- HERO -->
+<section class="gallery-hero">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <span class="badge">📦 Logistique & Transport</span>
+
+    <h1 class="wi">Notre Galerie</h1>
+
+    <p class="wi">
+      Découvrez nos opérations, notre flotte de camions et nos entrepôts à travers l’Europe.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION -->
+<section class="gallery-section section-padding">
+  <div class="container">
+
+    <div class="section-header premium">
+      <h2>Nos <span>Images</span></h2>
+      <p>Aperçu réel de notre activité logistique</p>
+    </div>
+
+    <app-gallery
+      [items]="dataService.galleryItems"
+      [categories]="galleryCategories"
+    ></app-gallery>
+
+  </div>
+</section>

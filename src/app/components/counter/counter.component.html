@@ -1,0 +1,48 @@
+<section class="counter-section">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="counter-header" appScrollReveal>
+
+      <span class="badge">Nos résultats</span>
+
+      <h2>
+        Une logistique <span>fiable et rapide</span>
+      </h2>
+
+      <p class="wi">
+        Des chiffres qui prouvent notre efficacité dans le transport international.
+      </p>
+
+    </div>
+
+    <div class="counter-grid">
+
+      <div
+        class="counter-item"
+        *ngFor="let item of items; let i = index"
+        appScrollReveal
+      >
+
+        <div class="icon">
+          <i [class]="item.icon"></i>
+        </div>
+
+        <div class="value">
+          <span>{{ displayValues[i] }}</span>
+          <small>{{ item.suffix }}</small>
+        </div>
+
+        <div class="label">
+          {{ item.label }}
+        </div>   
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

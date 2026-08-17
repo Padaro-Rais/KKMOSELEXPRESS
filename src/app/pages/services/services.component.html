@@ -1,0 +1,58 @@
+
+<!-- SERVICES LIST -->
+<section class="services-section section-padding">
+
+  <div class="container">
+
+    <div class="section-header">
+      <h2 appScrollReveal>
+        Nos solutions de <span>transport</span>
+      </h2>
+      <p appScrollReveal>
+        Des services adaptés à tous vos besoins logistiques
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div
+        class="service-card"
+        *ngFor="let service of services; trackBy: trackByIndex; let i = index"
+        appScrollReveal
+      >
+
+        <!-- IMAGE -->
+        <div class="service-image">
+          <img [src]="service.image" [alt]="service.title">
+
+          <div class="service-icon">
+            <i [class]="service.icon"></i>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="service-content">
+
+          <h3>{{ service.title }}</h3>
+
+          <p>{{ service.description }}</p>
+
+          <ul>
+            <li *ngFor="let feature of service.features">
+              ✓ {{ feature }}
+            </li>
+          </ul>
+
+          <a routerLink="/contact" class="btn-outline">
+            Demander un devis
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

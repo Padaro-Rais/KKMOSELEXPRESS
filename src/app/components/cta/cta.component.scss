@@ -1,0 +1,153 @@
+.cta-section {
+  position: relative;
+
+  padding: 90px 0;
+
+  background: linear-gradient(135deg, #0B3D91, #1e5eff);
+
+  overflow: hidden;
+  color: white;
+}
+
+/* overlay décoratif */
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(245,130,32,0.1), transparent 50%);
+}
+
+/* content */
+.cta-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  max-width: 750px;
+  margin: auto;
+}
+
+/* badge */
+.cta-badge {
+  display: inline-block;
+
+  padding: 6px 14px;
+
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+
+  border-radius: 30px;
+
+  font-size: 12px;
+
+  margin-bottom: 15px;
+}
+
+/* title */
+.cta-content h2 {
+  font-size: 42px;
+  font-weight: 900;
+
+  margin-bottom: 15px;
+
+  line-height: 1.1;
+}
+
+/* text */
+.cta-content p {
+  font-size: 16px;
+
+  opacity: 0.85;
+
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+/* buttons */
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 12px 22px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.cta-btn.primary {
+  background: #F58220;
+  color: white;
+
+  &:hover {
+    transform: translateY(-3px);
+    background: #ff9a3c;
+  }
+}
+
+.cta-btn.secondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+
+  color: white;
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+/* stats */
+.cta-mini-stats {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+}
+
+.cta-mini-stats div {
+  text-align: center;
+}
+
+.cta-mini-stats strong {
+  display: block;
+
+  font-size: 20px;
+
+  color: #F58220;
+}
+
+.cta-mini-stats span {
+  font-size: 12px;
+
+  opacity: 0.75;
+}
+
+.wi {
+color: white;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 28px;
+  }
+}

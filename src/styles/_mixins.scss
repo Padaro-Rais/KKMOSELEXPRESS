@@ -1,0 +1,187 @@
+@use 'variables' as v;
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($columns: 1, $gap: v.$space-md) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 v.$space-lg;
+
+  @media (min-width: v.$breakpoint-lg) {
+    padding: 0 v.$space-2xl;
+  }
+}
+
+@mixin section-padding {
+  padding: v.$space-3xl 0;
+
+  @media (min-width: v.$breakpoint-lg) {
+    padding: v.$space-4xl 0;
+  }
+}
+
+@mixin glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@mixin glassmorphism-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@mixin card-hover {
+  transition: transform v.$transition-base, box-shadow v.$transition-base;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: v.$shadow-xl;
+  }
+}
+
+@mixin button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: v.$space-sm;
+  padding: v.$space-md v.$space-2xl;
+  background: v.$gradient-primary;
+  color: v.$white;
+  font-weight: v.$font-weight-semibold;
+  border-radius: v.$radius-md;
+  border: none;
+  cursor: pointer;
+  transition: all v.$transition-base;
+  box-shadow: v.$shadow-primary;
+  text-decoration: none;
+  font-size: v.$font-size-base;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px rgba(11, 61, 145, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@mixin button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: v.$space-sm;
+  padding: v.$space-md v.$space-2xl;
+  background: v.$gradient-secondary;
+  color: v.$white;
+  font-weight: v.$font-weight-semibold;
+  border-radius: v.$radius-md;
+  border: none;
+  cursor: pointer;
+  transition: all v.$transition-base;
+  box-shadow: v.$shadow-secondary;
+  text-decoration: none;
+  font-size: v.$font-size-base;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px rgba(245, 130, 32, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@mixin button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: v.$space-sm;
+  padding: v.$space-md v.$space-2xl;
+  background: transparent;
+  color: v.$white;
+  font-weight: v.$font-weight-semibold;
+  border-radius: v.$radius-md;
+  border: 2px solid v.$white;
+  cursor: pointer;
+  transition: all v.$transition-base;
+  text-decoration: none;
+  font-size: v.$font-size-base;
+
+  &:hover {
+    background: v.$white;
+    color: v.$primary;
+    transform: translateY(-2px);
+  }
+}
+
+@mixin section-title {
+  font-size: v.$font-size-3xl;
+  font-weight: v.$font-weight-bold;
+  color: v.$text-primary;
+  text-align: center;
+  margin-bottom: v.$space-sm;
+
+  @media (min-width: v.$breakpoint-lg) {
+    font-size: v.$font-size-4xl;
+  }
+}
+
+@mixin section-subtitle {
+  font-size: v.$font-size-lg;
+  color: v.$text-muted;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto v.$space-2xl;
+  line-height: v.$line-height-relaxed;
+}
+
+@mixin section-header {
+  text-align: center;
+  margin-bottom: v.$space-2xl;
+
+  @media (min-width: v.$breakpoint-lg) {
+    margin-bottom: v.$space-3xl;
+  }
+}
+
+@mixin scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin responsive-grid($min: 280px, $gap: v.$space-lg) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
