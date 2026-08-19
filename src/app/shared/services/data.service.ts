@@ -25,7 +25,7 @@ export class DataService {
 
   contactInfo: ContactInfo = {
     phone: '+352 69 15 33 566',
-    email: 'contact@kkmosel-logistics.lu',
+    email: 'info@kkmoseleexpress.lu',
     address: '38 Grand-Rue L-6630 Wasserbillig Luxemburg',
     hours: 'Lun - Ven: 8h00 - 18h00',
   };
@@ -34,7 +34,7 @@ export class DataService {
     home: {
       title: 'KKMOSEL EXPRESS - Transport & Logistique Internationale',
       description: 'KKMOSEL EXPRESS assure le transport rapide, securise et fiable entre le Luxembourg, l\'Allemagne, la France et la Belgique. Plus de 10 ans d\'experience.',
-      keywords: 'transport, logistique, Luxembourg, Allemagne, France, Belgique, livraison, camion, entreposage',
+      keywords: 'transport, logistique, Luxembourg, Allemagne, France, Belgique, livraison, camion',
     },
     about: {
       title: 'A propos - KKMOSEL EXPRESS',
@@ -43,8 +43,8 @@ export class DataService {
     },
     services: {
       title: 'Nos Services - KKMOSEL EXPRESS',
-      description: 'Transport routier, logistique, entreposage, distribution et livraison express. Des solutions completes pour vos besoins de transport.',
-      keywords: 'services, transport routier, logistique, entreposage, distribution, livraison express',
+      description: 'Transport routier, logistique, distribution et livraison express. Des solutions completes pour vos besoins de transport.',
+      keywords: 'services, transport routier, logistique, distribution, livraison express',
     },
     destinations: {
       title: 'Nos Destinations - KKMOSEL EXPRESS',
@@ -124,14 +124,7 @@ export class DataService {
       features: ['Planification optimale', 'Gestion de stocks', 'Reporting detaille', 'Analyse de performance'],
       image: 'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg',
     },
-    {
-      id: 'stockage',
-      title: 'Entreposage',
-      description: 'Espaces d\'entreposage securises et modernes pour le stockage de vos marchandises sur courte, moyenne et longue duree.',
-      icon: 'fa-solid fa-warehouse',
-      features: ['Entrepots securises', 'Climate control', 'Inventaire en ligne', 'Acces 24h/24'],
-      image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg',
-    },
+
     {
       id: 'distribution',
       title: 'Distribution',
@@ -175,14 +168,7 @@ export class DataService {
       features: [],
       image: '',
     },
-    {
-      id: 'entreposage',
-      title: 'Entreposage',
-      description: 'Entrepots securises et modernes pour le stockage de vos marchandises.',
-      icon: 'fa-solid fa-warehouse',
-      features: [],
-      image: '',
-    },
+
     {
       id: 'distribution',
       title: 'Distribution',
@@ -200,7 +186,7 @@ export class DataService {
       flag: '🇱🇺',
       code: 'LU',
       description: 'Notre siege social et centre de distribution principal. Desserte complete du Grand-Duche avec des solutions adaptees au tissu economique local.',
-      services: ['Transport national', 'Distribution urbaine', 'Entreposage', 'Logistique'],
+      services: ['Transport national', 'Distribution urbaine', 'Logistique'],
       averageTime: '24h',
       image: 'https://images.pexels.com/photos/208733/pexels-photo-208733.jpeg',
     },
@@ -220,7 +206,7 @@ export class DataService {
       flag: '🇫🇷',
       code: 'FR',
       description: 'Reseau etendu couvrant la France metropolitaine. Desserte des grandes metropoles et des zones industrielles.',
-      services: ['Transport international', 'Express France', 'Logistique', 'Entreposage'],
+      services: ['Transport international', 'Express France', 'Logistique'],
       averageTime: '24-48h',
       image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?auto=compress&cs=tinysrgb&w=1600',
     },
@@ -285,7 +271,7 @@ export class DataService {
     {
       id: '4',
       question: 'Comment obtenir un devis ?',
-      answer: 'Vous pouvez obtenir un devis gratuit en remplissant le formulaire de contact sur notre site, en nous appelant au +352 27 99 99 99 ou en envoyant un email a contact@kkmosel-logistics.lu. Nous repondons sous 24h.',
+      answer: 'Vous pouvez obtenir un devis gratuit en remplissant le formulaire de contact sur notre site, en nous appelant au +352 27 99 99 99 ou en envoyant un email a Info@kkmoselexpress.lu. Nous repondons sous 24h.',
     },
     {
       id: '5',
@@ -330,7 +316,7 @@ export class DataService {
     {
       id: '13',
       question: 'Quels sont vos horaires d\'ouverture ?',
-      answer: 'Notre siege est ouvert du lundi au vendredi de 8h00 a 18h00. Cependant, nos services de transport et d\'entreposage fonctionnent 24h/24, 7j/7 pour assurer vos livraisons urgentes.',
+      answer: 'Notre siege est ouvert du lundi au vendredi de 8h00 a 18h00. Cependant, nos services de transport  fonctionnent 24h/24, 7j/7 pour assurer vos livraisons urgentes.',
     },
     {
       id: '14',
@@ -345,17 +331,17 @@ export class DataService {
   ];
 
   galleryItems: GalleryItem[] = [
-    { id: '1', category: 'camions', title: 'Flotte moderne', image: 'assets/images/hero.PNG' },
+    { id: '1', category: 'camions', title: 'Flotte moderne', image: 'assets/images/hero.jpeg' },
     { id: '2', category: 'camions', title: 'Camion sur autoroute', image: 'https://images.pexels.com/photos/977213/pexels-photo-977213.jpeg' },
-    { id: '3', category: 'camions', title: 'Transport routier', image: 'assets/images/IMG_3519.PNG' },
-    { id: '4', category: 'camions', title: 'Camion de nuit', image: 'assets/images/IMG_3522.PNG' },
+    { id: '3', category: 'camions', title: 'Transport routier', image: 'assets/images/IMG_3519.jpeg' },
+    { id: '4', category: 'camions', title: 'Camion de nuit', image: 'assets/images/IMG_3522.jpeg' },
     { id: '5', category: 'entrepots', title: 'Entrepot principal', image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg' },
-    { id: '6', category: 'entrepots', title: 'Stockage organise', image: 'assets/images/IMG_3523.PNG' },
+    { id: '6', category: 'entrepots', title: 'Stockage organise', image: 'assets/images/IMG_3523.jpeg' },
     { id: '7', category: 'entrepots', title: 'Logistique interieure', image: 'https://images.pexels.com/photos/6169638/pexels-photo-6169638.jpeg' },
-    { id: '8', category: 'entrepots', title: 'Chariot elevateur', image: 'assets/images/IMG_3524.PNG' },
-    { id: '9', category: 'chargement', title: 'Chargement de palettes', image: 'assets/images/IMG_3525.PNG' },
-    { id: '10', category: 'chargement', title: 'Chargement de colis', image: 'assets/images/IMG_3527.PNG' },
-    { id: '11', category: 'livraison', title: 'Livraison en ville', image: 'assets/images/IMG_3528.PNG' },
+    { id: '8', category: 'entrepots', title: 'Chariot elevateur', image: 'assets/images/IMG_3519.jpeg' },
+    { id: '9', category: 'chargement', title: 'Chargement de palettes', image: 'assets/images/IMG_3522.jpeg' },
+    { id: '10', category: 'chargement', title: 'Chargement de colis', image: 'assets/images/IMG_3519.jpeg' },
+    { id: '11', category: 'livraison', title: 'Livraison en ville', image: 'assets/images/IMG_3522.jpeg' },
     { id: '12', category: 'livraison', title: 'Livraison express', image: 'https://images.pexels.com/photos/4246198/pexels-photo-4246198.jpeg' },
   ];
 
