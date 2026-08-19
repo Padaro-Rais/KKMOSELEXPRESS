@@ -1,63 +1,159 @@
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
 <app-hero></app-hero>
 
-<section class="why-choose section-padding">
+
+<!-- =========================================================
+     PRÉSENTATION SEO
+     ========================================================= -->
+
+<section class="seo-intro section-padding">
+
     <div class="container">
 
         <div class="section-header">
+
             <h2 appScrollReveal>
-                Pourquoi choisir <span>KKMOSEL LOGISTICS</span>
+                Votre partenaire de transport et de logistique au Luxembourg
             </h2>
+
             <p appScrollReveal>
-                Votre partenaire de confiance pour le transport international
+                KKMOSEL EXPRESS accompagne les entreprises et les particuliers
+                dans leurs besoins de transport de marchandises et de logistique
+                au Luxembourg et vers la France, la Belgique, l’Allemagne et
+                d’autres destinations européennes.
             </p>
+
         </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     POURQUOI NOUS CHOISIR
+     ========================================================= -->
+
+<section class="why-choose section-padding">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2 appScrollReveal>
+                Pourquoi choisir <span>KKMOSEL EXPRESS</span> ?
+            </h2>
+
+            <p appScrollReveal>
+                Un partenaire de confiance pour vos besoins de transport
+                et de logistique au Luxembourg et en Europe.
+            </p>
+
+        </div>
+
 
         <div class="why-grid">
 
-            <div class="why-card" *ngFor="let item of whyChooseUs; let i = index; trackBy: trackByIndex" appScrollReveal
-                [style.transitionDelay]="i * 100 + 'ms'">
+            <div
+                class="why-card"
+                *ngFor="let item of whyChooseUs; let i = index; trackBy: trackByIndex"
+                appScrollReveal
+                [style.transitionDelay]="i * 100 + 'ms'"
+            >
 
                 <div class="why-icon">
                     <i [class]="item.icon"></i>
                 </div>
 
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
+                <h3>
+                    {{ item.title }}
+                </h3>
+
+                <p>
+                    {{ item.description }}
+                </p>
 
             </div>
 
         </div>
+
     </div>
+
 </section>
 
-<!-- DESTINATIONS -->
+
+<!-- =========================================================
+     DESTINATIONS
+     ========================================================= -->
+
 <section class="destinations-preview section-padding">
+
     <div class="container">
 
         <div class="section-header">
-            <h2 appScrollReveal>Nos <span>Destinations</span></h2>
-            <p appScrollReveal>Un réseau étendu couvrant 4 pays européens</p>
+
+            <h2 appScrollReveal>
+                Nos <span>destinations de transport</span>
+            </h2>
+
+            <p appScrollReveal>
+                Un réseau de transport couvrant le Luxembourg,
+                la France, la Belgique et l’Allemagne.
+            </p>
+
         </div>
+
 
         <div class="destinations-grid">
 
-            <div class="destination-card" *ngFor="let dest of destinations; let i = index; trackBy: trackByIndex"
-                appScrollReveal [style.transitionDelay]="i * 100 + 'ms'">
+            <div
+                class="destination-card"
+                *ngFor="let dest of destinations; let i = index; trackBy: trackByIndex"
+                appScrollReveal
+                [style.transitionDelay]="i * 100 + 'ms'"
+            >
 
-                <div class="destination-flag">{{ dest.flag }}</div>
+                <div class="destination-flag">
+                    {{ dest.flag }}
+                </div>
+
 
                 <div class="destination-image">
-                    <img [src]="dest.image" [alt]="dest.country" loading="lazy">
+
+                    <img
+                        [src]="dest.image"
+                        [alt]="'Transport de marchandises vers ' + dest.country + ' - KKMOSEL EXPRESS'"
+                        loading="lazy"
+                    >
+
                 </div>
+
 
                 <div class="destination-content">
 
-                    <h3>{{ dest.country }}</h3>
-                    <p>{{ dest.description }}</p>
+                    <h3>
+                        Transport vers {{ dest.country }}
+                    </h3>
+
+                    <p>
+                        {{ dest.description }}
+                    </p>
+
 
                     <div class="destination-time">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>Delai moyen: {{ dest.averageTime }}</span>
+
+                        <i
+                            class="fa-solid fa-clock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Délai moyen : {{ dest.averageTime }}
+                        </span>
+
                     </div>
 
                 </div>
@@ -67,57 +163,105 @@
         </div>
 
     </div>
+
 </section>
 
-<!-- SERVICES -->
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+
 <section class="services-preview section-padding">
 
     <div class="container">
 
-        <div class="section-header premium" appScrollReveal>
+        <div
+            class="section-header premium"
+            appScrollReveal
+        >
 
-            <span class="section-badge">Nos expertises</span>
+            <span class="section-badge">
+                Nos expertises
+            </span>
 
             <h2>
-                Des solutions de <span>transport intelligentes</span>
+                Des solutions de
+                <span>transport et de logistique</span>
+                adaptées à vos besoins
             </h2>
 
             <p>
-                Nous assurons le transport entre le Luxembourg, l’Allemagne,
-                la France et la Belgique avec rapidité et sécurité.
+                KKMOSEL EXPRESS assure le transport de marchandises
+                entre le Luxembourg, l’Allemagne, la France et la Belgique
+                avec des solutions fiables, sécurisées et adaptées aux
+                besoins de chaque client.
             </p>
 
         </div>
 
-        <!-- BLOCK IMAGE + CONTENT -->
+
+        <!-- =====================================================
+             IMAGE + SERVICES
+             ===================================================== -->
+
         <div class="services-showcase">
 
-            <!-- IMAGE SIDE -->
-            <div class="showcase-image" appScrollReveal>
-                <img src="https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg"
-                    alt="Transport logistique" />
+
+            <!-- IMAGE -->
+
+            <div
+                class="showcase-image"
+                appScrollReveal
+            >
+
+                <img
+                    src="https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg"
+                    alt="Camion et transport de marchandises pour la logistique internationale"
+                    loading="lazy"
+                >
 
                 <div class="image-overlay"></div>
 
                 <div class="image-badge">
                     🚚 Transport international
                 </div>
+
             </div>
 
-            <!-- CONTENT SIDE -->
-            <div class="showcase-content" appScrollReveal>
 
-                <app-services-card [services]="homeServices"></app-services-card>
+            <!-- CONTENT -->
+
+            <div
+                class="showcase-content"
+                appScrollReveal
+            >
+
+                <app-services-card
+                    [services]="homeServices"
+                ></app-services-card>
+
+
+                <!-- CTA -->
 
                 <div class="services-cta">
 
                     <div class="cta-box">
 
-                        <h3 class="wi">Besoin d’une solution sur mesure ?</h3>
-                        <p class="wi">Nos experts vous accompagnent dans tous vos projets logistiques.</p>
+                        <h3 class="wi">
+                            Besoin d’une solution de transport sur mesure ?
+                        </h3>
 
-                        <a routerLink="/services" class="btn-primary">
-                            Voir tous nos services →
+                        <p class="wi">
+                            Nos experts vous accompagnent dans vos projets
+                            de transport et de logistique au Luxembourg
+                            et en Europe.
+                        </p>
+
+                        <a
+                            routerLink="/services"
+                            class="btn-primary"
+                        >
+                            Découvrir tous nos services →
                         </a>
 
                     </div>
@@ -132,23 +276,55 @@
 
 </section>
 
-<!-- <app-counter [items]="counterItems"></app-counter> -->
 
-<!-- <section class="testimonials section-padding">
+<!-- =========================================================
+     PRÉSENTATION ENTREPRISE
+     ========================================================= -->
+
+<section class="company-seo section-padding">
+
     <div class="container">
 
         <div class="section-header">
+
             <h2 appScrollReveal>
-                Ce que disent nos <span>clients</span>
+                KKMOSEL EXPRESS, votre partenaire transport au Luxembourg
             </h2>
+
             <p appScrollReveal>
-                La satisfaction de nos clients est notre priorité
+                Des solutions de transport fiables pour vos marchandises
+                au Luxembourg et à travers l’Europe.
             </p>
+
         </div>
 
-        <app-testimonial [testimonials]="testimonials"></app-testimonial>
+
+        <div class="company-description">
+
+            <p>
+                Spécialisée dans le transport et la logistique,
+                KKMOSEL EXPRESS accompagne ses clients dans
+                l’acheminement de leurs marchandises au Luxembourg
+                et vers plusieurs destinations européennes.
+            </p>
+
+            <p>
+                Notre activité couvre notamment les échanges entre
+                le Luxembourg, la France, la Belgique et l’Allemagne.
+                Nous proposons des solutions adaptées aux besoins
+                des entreprises et des particuliers à la recherche
+                d’un service de transport fiable et sécurisé.
+            </p>
+
+        </div>
 
     </div>
-</section> -->
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
 
 <app-cta></app-cta>

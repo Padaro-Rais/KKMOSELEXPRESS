@@ -85,4 +85,7 @@ export interface PageMeta {
   title: string;
   description: string;
   keywords: string;
+  url?: string;
+  image?: string;
+  noindex?: boolean;
 }

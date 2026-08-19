@@ -27,7 +27,9 @@
           "options": {
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "index": "src/index.html",
             "browser": "src/main.ts",
